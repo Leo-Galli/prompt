@@ -60,3 +60,6 @@ jobs:
 
       - name: ch10 companion tests
         run: python -m unittest discover -s ch10-one-task/tests -v
+
+      - name: ch11 companion tests
+        run: python -m unittest discover -s ch11-fix-pass/tests -v

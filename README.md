@@ -38,7 +38,8 @@ Chapter folders land as the book is written. Follow the book for exercise steps;
 | `ch08-repo-rules/` | Bloated vs short AGENTS.md, lean task that relies on rules, fixture, exercises |
 | `ch09-spec-progress/` | Mini-spec + PROGRESS resume vs ignore-progress flood, fixture, exercises |
 | `ch10-one-task/` | Overloaded session vs filled single-task template, fixture, exercises |
-| `templates/` | Shared prompt templates with `{{variables}}` (`single-task.md` landed) |
+| `ch11-fix-pass/` | Soft release-note failure vs filled fix-pass template, diagnosis, exercises |
+| `templates/` | Shared prompt templates with `{{variables}}` (`single-task.md`, `fix-pass.md`) |
 | `prompt_lint/` | CLI skeleton that checks prompts for goal, output format and success criteria |
 | `.github/workflows/` | CI smoke plus chapter and lint jobs as they land |
 
@@ -60,6 +61,7 @@ python -m unittest discover -s ch07-code/tests -v
 python -m unittest discover -s ch08-repo-rules/tests -v
 python -m unittest discover -s ch09-spec-progress/tests -v
 python -m unittest discover -s ch10-one-task/tests -v
+python -m unittest discover -s ch11-fix-pass/tests -v
 ```
 
 ## License
