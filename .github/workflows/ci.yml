@@ -45,3 +45,6 @@ jobs:
 
       - name: ch05 companion tests
         run: python -m unittest discover -s ch05-reasoning/tests -v
+
+      - name: ch06 companion tests
+        run: python -m unittest discover -s ch06-decomposition/tests -v

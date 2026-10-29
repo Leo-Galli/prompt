@@ -33,6 +33,7 @@ Chapter folders land as the book is written. Follow the book for exercise steps;
 | `ch03-output-format/` | Free-form vs JSON schema prompts, fence failure + fix-pass, exercises |
 | `ch04-few-shot/` | Zero-shot vs 2-shot classify, bad-example skew, exercises |
 | `ch05-reasoning/` | Answer-only vs visible-steps capacity puzzle, exercises |
+| `ch06-decomposition/` | Mega-prompt failure vs 3-step plan/contract/verify chain, exercises |
 | `templates/` | Shared prompt templates with `{{variables}}` |
 | `prompt_lint/` | CLI skeleton that checks prompts for goal, output format and success criteria |
 | `.github/workflows/` | CI smoke plus chapter and lint jobs as they land |
@@ -50,6 +51,7 @@ python -m unittest discover -s ch02-anatomy/tests -v
 python -m unittest discover -s ch03-output-format/tests -v
 python -m unittest discover -s ch04-few-shot/tests -v
 python -m unittest discover -s ch05-reasoning/tests -v
+python -m unittest discover -s ch06-decomposition/tests -v
 ```
 
 ## License
