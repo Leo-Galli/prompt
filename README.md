@@ -1,0 +1,46 @@
+# Prompt companion repository
+
+[![ci](https://github.com/Leo-Galli/prompt/actions/workflows/ci.yml/badge.svg)](https://github.com/Leo-Galli/prompt/actions/workflows/ci.yml)
+
+This repository accompanies **Prompt: How to Talk to AI So It Gets It Right the First Time** by Leonardo Galli.
+
+Instructions for exercises are printed in the book only. This repository does not contain the manuscript.
+
+## Quick start
+
+### Windows (PowerShell)
+```powershell
+git clone https://github.com/Leo-Galli/prompt.git
+cd prompt
+python -c "print('smoke ok')"
+python -m unittest discover -s prompt_lint/tests -v
+```
+
+### macOS / Linux
+```bash
+git clone https://github.com/Leo-Galli/prompt.git
+cd prompt
+python -c "print('smoke ok')"
+python -m unittest discover -s prompt_lint/tests -v
+```
+
+Chapter folders land as the book is written. Follow the book for exercise steps; run that chapter's tests from its folder when present.
+
+## Folder map
+| Path | Purpose |
+| --- | --- |
+| `ch01-how-models-read/` ... `ch18-daily-practice/` | Per-chapter before/after prompts, outputs, exercises |
+| `templates/` | Shared prompt templates with `{{variables}}` |
+| `prompt_lint/` | CLI skeleton that checks prompts for goal, output format and success criteria |
+| `.github/workflows/` | CI smoke plus chapter and lint jobs as they land |
+
+### Smoke and prompt-lint skeleton
+```bash
+python -c "print('smoke ok')"
+python -m unittest discover -s prompt_lint/tests -v
+```
+
+Per-chapter test commands will be listed here as each chapter lands.
+
+## License
+MIT. See `LICENSE`.
