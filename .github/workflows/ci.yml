@@ -57,3 +57,6 @@ jobs:
 
       - name: ch09 companion tests
         run: python -m unittest discover -s ch09-spec-progress/tests -v
+
+      - name: ch10 companion tests
+        run: python -m unittest discover -s ch10-one-task/tests -v
