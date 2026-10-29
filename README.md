@@ -35,6 +35,7 @@ Chapter folders land as the book is written. Follow the book for exercise steps;
 | `ch05-reasoning/` | Answer-only vs visible-steps capacity puzzle, exercises |
 | `ch06-decomposition/` | Mega-prompt failure vs 3-step plan/contract/verify chain, exercises |
 | `ch07-code/` | Vague fix vs scoped file allowlist + failing-test-first, fixture, exercises |
+| `ch08-repo-rules/` | Bloated vs short AGENTS.md, lean task that relies on rules, fixture, exercises |
 | `templates/` | Shared prompt templates with `{{variables}}` |
 | `prompt_lint/` | CLI skeleton that checks prompts for goal, output format and success criteria |
 | `.github/workflows/` | CI smoke plus chapter and lint jobs as they land |
@@ -54,6 +55,7 @@ python -m unittest discover -s ch04-few-shot/tests -v
 python -m unittest discover -s ch05-reasoning/tests -v
 python -m unittest discover -s ch06-decomposition/tests -v
 python -m unittest discover -s ch07-code/tests -v
+python -m unittest discover -s ch08-repo-rules/tests -v
 ```
 
 ## License
