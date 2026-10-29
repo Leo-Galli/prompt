@@ -33,3 +33,6 @@ jobs:
 
       - name: ch01 companion tests
         run: python -m unittest discover -s ch01-how-models-read/tests -v
+
+      - name: ch02 companion tests
+        run: python -m unittest discover -s ch02-anatomy/tests -v

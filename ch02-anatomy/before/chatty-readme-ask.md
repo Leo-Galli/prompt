@@ -1,0 +1,1 @@
+Hey! Can you write something nice for my README? It's a little CLI called linecount that counts lines in files. Make it sound good, maybe a bit professional but friendly, and also somehow cover how to install it with pip, and give an example command. Thanks so much!!

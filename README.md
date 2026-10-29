@@ -43,6 +43,7 @@ python -m unittest discover -s prompt_lint/tests -v
 ### Chapter tests
 ```bash
 python -m unittest discover -s ch01-how-models-read/tests -v
+python -m unittest discover -s ch02-anatomy/tests -v
 ```
 
 ## License
