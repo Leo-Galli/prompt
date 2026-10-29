@@ -39,3 +39,6 @@ jobs:
 
       - name: ch03 companion tests
         run: python -m unittest discover -s ch03-output-format/tests -v
+
+      - name: ch04 companion tests
+        run: python -m unittest discover -s ch04-few-shot/tests -v
