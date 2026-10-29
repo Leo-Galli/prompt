@@ -30,3 +30,6 @@ jobs:
         run: python -m unittest discover -s prompt_lint/tests -v
         env:
           PYTHONPATH: .
+
+      - name: ch01 companion tests
+        run: python -m unittest discover -s ch01-how-models-read/tests -v

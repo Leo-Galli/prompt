@@ -40,7 +40,10 @@ python -c "print('smoke ok')"
 python -m unittest discover -s prompt_lint/tests -v
 ```
 
-Per-chapter test commands will be listed here as each chapter lands.
+### Chapter tests
+```bash
+python -m unittest discover -s ch01-how-models-read/tests -v
+```
 
 ## License
 MIT. See `LICENSE`.
