@@ -69,3 +69,6 @@ jobs:
 
       - name: ch13 companion tests
         run: python -m unittest discover -s ch13-media/tests -v
+
+      - name: ch14 companion tests
+        run: python -m unittest discover -s ch14-safety/tests -v
