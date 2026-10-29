@@ -48,3 +48,6 @@ jobs:
 
       - name: ch06 companion tests
         run: python -m unittest discover -s ch06-decomposition/tests -v
+
+      - name: ch07 companion tests
+        run: python -m unittest discover -s ch07-code/tests -v
