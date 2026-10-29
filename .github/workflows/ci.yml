@@ -54,3 +54,6 @@ jobs:
 
       - name: ch08 companion tests
         run: python -m unittest discover -s ch08-repo-rules/tests -v
+
+      - name: ch09 companion tests
+        run: python -m unittest discover -s ch09-spec-progress/tests -v
