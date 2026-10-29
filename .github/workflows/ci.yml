@@ -85,3 +85,6 @@ jobs:
         run: python -m unittest discover -s ch16-library/tests -v
         env:
           PYTHONPATH: .
+
+      - name: ch17 companion tests
+        run: python -m unittest discover -s ch17-capstone-book/tests -v
