@@ -4,6 +4,8 @@
 
 This repository accompanies **Prompt: How to Talk to AI So It Gets It Right the First Time** by Leonardo Galli.
 
+Leonardo Galli is a 17-year-old developer who lives in Milan, Italy. He builds open source software and writes prompts for coding agents daily. He is the author of Spark and Signal. He also works with electronics and radio, hikes in the mountains, and referees soccer matches. Readers can find his work at github.com/Leo-Galli; GitHub is the only contact channel listed in this book.
+
 Instructions for exercises are printed in the book only. This repository does not contain the manuscript.
 
 ## Quick start
