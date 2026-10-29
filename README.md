@@ -48,7 +48,8 @@ Chapter folders land as the book is written. Follow the book for exercise steps;
 | `ch15-eval/` | Regressed triage vs restored SEVERITY template, 5-case set, score_eval stub, exercises |
 | `ch16-library/` | Raw changelog ask vs templated blurb, prompt-lint fail/pass fixtures, exercises |
 | `ch17-capstone-book/` | Invented Spark/Signal hype vs one-task kitbook resume + FACTS allowlist, exercises |
-| `templates/` | Shared prompt templates with `{{variables}}` (`master-spec.md`, `single-task.md`, `fix-pass.md`) |
+| `ch18-daily-practice/` | Vague daily tips vs filled daily card + lint/save, weak-template retire drill, exercises |
+| `templates/` | Shared prompt templates with `{{variables}}` (`master-spec.md`, `single-task.md`, `fix-pass.md`, `daily-card.md`) |
 | `prompt_lint/` | CLI that fails prompts missing goal, output format or success criteria |
 | `.github/workflows/` | CI smoke plus chapter and lint jobs as they land |
 
@@ -78,6 +79,7 @@ python -m unittest discover -s ch14-safety/tests -v
 python -m unittest discover -s ch15-eval/tests -v
 PYTHONPATH=. python -m unittest discover -s ch16-library/tests -v
 python -m unittest discover -s ch17-capstone-book/tests -v
+PYTHONPATH=. python -m unittest discover -s ch18-daily-practice/tests -v
 ```
 
 ## License

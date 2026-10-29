@@ -88,3 +88,8 @@ jobs:
 
       - name: ch17 companion tests
         run: python -m unittest discover -s ch17-capstone-book/tests -v
+
+      - name: ch18 companion tests
+        run: python -m unittest discover -s ch18-daily-practice/tests -v
+        env:
+          PYTHONPATH: .
