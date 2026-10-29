@@ -72,3 +72,6 @@ jobs:
 
       - name: ch14 companion tests
         run: python -m unittest discover -s ch14-safety/tests -v
+
+      - name: ch15 companion tests
+        run: python -m unittest discover -s ch15-eval/tests -v

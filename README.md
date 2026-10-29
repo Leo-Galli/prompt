@@ -42,6 +42,7 @@ Chapter folders land as the book is written. Follow the book for exercise steps;
 | `ch12-documents/` | Vague write-chapter vs outline-bound G03 draft, voice/continuity fixtures, exercises |
 | `ch13-media/` | Vague image ask vs structured brief + six-slide outline, brand locks, exercises |
 | `ch14-safety/` | Invent-statistic failure vs cited/allowlist blurb + untrusted-block drill, exercises |
+| `ch15-eval/` | Regressed triage vs restored SEVERITY template, 5-case set, score_eval stub, exercises |
 | `templates/` | Shared prompt templates with `{{variables}}` (`single-task.md`, `fix-pass.md`) |
 | `prompt_lint/` | CLI skeleton that checks prompts for goal, output format and success criteria |
 | `.github/workflows/` | CI smoke plus chapter and lint jobs as they land |
@@ -68,6 +69,7 @@ python -m unittest discover -s ch11-fix-pass/tests -v
 python -m unittest discover -s ch12-documents/tests -v
 python -m unittest discover -s ch13-media/tests -v
 python -m unittest discover -s ch14-safety/tests -v
+python -m unittest discover -s ch15-eval/tests -v
 ```
 
 ## License
