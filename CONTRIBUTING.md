@@ -18,7 +18,8 @@ Run the CI smoke path locally when you can:
 
 ```bash
 python -c "print('smoke ok')"
-python -m unittest discover -s prompt_lint/tests -v
+PYTHONPATH=. python -m unittest discover -s prompt_lint/tests -v
+PYTHONPATH=. python -m prompt_lint templates/
 ```
 
-Chapter-specific test commands will be documented in each chapter folder README as chapters land.
+Chapter-specific test commands are documented in each chapter folder README as chapters land.

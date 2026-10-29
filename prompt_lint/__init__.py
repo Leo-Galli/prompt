@@ -1,3 +1,3 @@
-"""prompt-lint: check prompts for required fields (skeleton)."""
+"""prompt-lint: fail when a prompt/template lacks goal, output format or success criteria."""
 
-__version__ = "0.0.1"
+__version__ = "0.1.0"

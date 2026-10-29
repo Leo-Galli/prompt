@@ -26,8 +26,13 @@ jobs:
           test -f CONTRIBUTING.md
           python -c "print('smoke ok')"
 
-      - name: prompt-lint skeleton tests
+      - name: prompt-lint tests
         run: python -m unittest discover -s prompt_lint/tests -v
+        env:
+          PYTHONPATH: .
+
+      - name: prompt-lint templates
+        run: python -m prompt_lint templates/
         env:
           PYTHONPATH: .
 
@@ -75,3 +80,8 @@ jobs:
 
       - name: ch15 companion tests
         run: python -m unittest discover -s ch15-eval/tests -v
+
+      - name: ch16 companion tests
+        run: python -m unittest discover -s ch16-library/tests -v
+        env:
+          PYTHONPATH: .

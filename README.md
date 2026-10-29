@@ -13,7 +13,9 @@ Instructions for exercises are printed in the book only. This repository does no
 git clone https://github.com/Leo-Galli/prompt.git
 cd prompt
 python -c "print('smoke ok')"
+$env:PYTHONPATH = "."
 python -m unittest discover -s prompt_lint/tests -v
+python -m prompt_lint templates/
 ```
 
 ### macOS / Linux
@@ -21,7 +23,8 @@ python -m unittest discover -s prompt_lint/tests -v
 git clone https://github.com/Leo-Galli/prompt.git
 cd prompt
 python -c "print('smoke ok')"
-python -m unittest discover -s prompt_lint/tests -v
+PYTHONPATH=. python -m unittest discover -s prompt_lint/tests -v
+PYTHONPATH=. python -m prompt_lint templates/
 ```
 
 Chapter folders land as the book is written. Follow the book for exercise steps; run that chapter's tests from its folder when present.
@@ -43,14 +46,16 @@ Chapter folders land as the book is written. Follow the book for exercise steps;
 | `ch13-media/` | Vague image ask vs structured brief + six-slide outline, brand locks, exercises |
 | `ch14-safety/` | Invent-statistic failure vs cited/allowlist blurb + untrusted-block drill, exercises |
 | `ch15-eval/` | Regressed triage vs restored SEVERITY template, 5-case set, score_eval stub, exercises |
-| `templates/` | Shared prompt templates with `{{variables}}` (`single-task.md`, `fix-pass.md`) |
-| `prompt_lint/` | CLI skeleton that checks prompts for goal, output format and success criteria |
+| `ch16-library/` | Raw changelog ask vs templated blurb, prompt-lint fail/pass fixtures, exercises |
+| `templates/` | Shared prompt templates with `{{variables}}` (`master-spec.md`, `single-task.md`, `fix-pass.md`) |
+| `prompt_lint/` | CLI that fails prompts missing goal, output format or success criteria |
 | `.github/workflows/` | CI smoke plus chapter and lint jobs as they land |
 
-### Smoke and prompt-lint skeleton
+### Smoke and prompt-lint
 ```bash
 python -c "print('smoke ok')"
-python -m unittest discover -s prompt_lint/tests -v
+PYTHONPATH=. python -m unittest discover -s prompt_lint/tests -v
+PYTHONPATH=. python -m prompt_lint templates/
 ```
 
 ### Chapter tests
@@ -70,6 +75,7 @@ python -m unittest discover -s ch12-documents/tests -v
 python -m unittest discover -s ch13-media/tests -v
 python -m unittest discover -s ch14-safety/tests -v
 python -m unittest discover -s ch15-eval/tests -v
+PYTHONPATH=. python -m unittest discover -s ch16-library/tests -v
 ```
 
 ## License
